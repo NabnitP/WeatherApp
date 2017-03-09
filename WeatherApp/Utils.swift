@@ -21,7 +21,6 @@ class Utils {
             let queryItem = NSURLQueryItem(name: key, value: "\(value)")
             urlComponents.queryItems?.append(queryItem as URLQueryItem)
         }
-//        NSLog("\(urlComponents.url)")
         return urlComponents.url! as NSURL
     }
     
@@ -33,7 +32,6 @@ class Utils {
         urlComponents.host = Constants.ImageInfo.apiImgHostName
         urlComponents.path = Constants.ImageInfo.apiImgPath + (imageNameFull )
         
-//        NSLog("\(urlComponents.url)")
         return urlComponents.url! as NSURL
     }
 }
