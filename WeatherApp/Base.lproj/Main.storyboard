@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TPp-Ch-Uxv">
+                                <rect key="frame" x="16" y="103" width="219" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uao-nu-YFV">
+                                <rect key="frame" x="263" y="102" width="96" height="30"/>
+                                <color key="backgroundColor" red="0.66467900936174196" green="0.65582839193041498" blue="0.69292868589743595" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="M73-r5-Gs5"/>
+                                    <constraint firstAttribute="width" constant="96" id="luE-R0-CSv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="0.063544531685954572" green="0.022407025979503139" blue="0.11546474358974357" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0Q-gZ-XcE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXu-VI-iwL">
+                                <rect key="frame" x="16" y="299" width="343" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7xl-99-Crv">
+                                <rect key="frame" x="16" y="218" width="86" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="bo7-eE-a3R"/>
+                                    <constraint firstAttribute="width" constant="86" id="tb7-ca-MFq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 ºC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N60-NE-ILo">
+                                <rect key="frame" x="111" y="240" width="248" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="CTx-dI-q9u"/>
+                                    <constraint firstAttribute="height" constant="40" id="pdL-j0-8Ql"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiK-9P-G8L">
+                                <rect key="frame" x="16" y="159" width="343" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="X0Q-zy-s6O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather in your city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c2-Ws-M5x">
+                                <rect key="frame" x="16" y="40" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kUt-Fm-B4a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.8908748482958857" blue="0.46975193131645621" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="N60-NE-ILo" firstAttribute="top" secondItem="kiK-9P-G8L" secondAttribute="bottom" constant="27" id="CJS-Ct-jit"/>
+                            <constraint firstAttribute="trailing" secondItem="kiK-9P-G8L" secondAttribute="trailing" constant="16" id="DOr-uQ-xk9"/>
+                            <constraint firstAttribute="trailing" secondItem="N60-NE-ILo" secondAttribute="trailing" constant="16" id="Fgz-Br-V57"/>
+                            <constraint firstItem="TPp-Ch-Uxv" firstAttribute="top" secondItem="8c2-Ws-M5x" secondAttribute="bottom" constant="23" id="L6S-po-OsV"/>
+                            <constraint firstItem="uao-nu-YFV" firstAttribute="leading" secondItem="TPp-Ch-Uxv" secondAttribute="trailing" constant="28" id="M5S-jG-TIF"/>
+                            <constraint firstItem="uao-nu-YFV" firstAttribute="top" secondItem="8c2-Ws-M5x" secondAttribute="bottom" constant="22" id="McY-UG-Eh3"/>
+                            <constraint firstItem="TPp-Ch-Uxv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="R16-JH-2xO"/>
+                            <constraint firstItem="7xl-99-Crv" firstAttribute="top" secondItem="kiK-9P-G8L" secondAttribute="bottom" constant="5" id="Uk9-Eh-Y1X"/>
+                            <constraint firstItem="8c2-Ws-M5x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="VHG-PW-zha"/>
+                            <constraint firstAttribute="trailing" secondItem="8c2-Ws-M5x" secondAttribute="trailing" constant="16" id="XMR-ps-xt8"/>
+                            <constraint firstItem="kiK-9P-G8L" firstAttribute="top" secondItem="TPp-Ch-Uxv" secondAttribute="bottom" constant="26" id="Ymy-BF-hhX"/>
+                            <constraint firstItem="N60-NE-ILo" firstAttribute="leading" secondItem="7xl-99-Crv" secondAttribute="trailing" constant="9" id="aDB-1X-6RL"/>
+                            <constraint firstItem="7xl-99-Crv" firstAttribute="top" secondItem="kiK-9P-G8L" secondAttribute="bottom" constant="5" id="i8c-dg-aQW"/>
+                            <constraint firstItem="8c2-Ws-M5x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="pAN-WJ-Oni"/>
+                            <constraint firstItem="7xl-99-Crv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="tvc-U1-8fj"/>
+                            <constraint firstAttribute="trailing" secondItem="uao-nu-YFV" secondAttribute="trailing" constant="16" id="u1G-Ny-uRP"/>
+                            <constraint firstItem="kiK-9P-G8L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="xIa-PO-JMJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgWeatherIcon" destination="7xl-99-Crv" id="ENo-2a-jho"/>
+                        <outlet property="lblCityNameTitle" destination="kiK-9P-G8L" id="Ybc-x2-fb2"/>
+                        <outlet property="lblCurrentTemperature" destination="N60-NE-ILo" id="nYV-z4-rkg"/>
+                        <outlet property="lblImgDescription" destination="zXu-VI-iwL" id="NKm-VJ-Ndm"/>
+                        <outlet property="txtCityName" destination="TPp-Ch-Uxv" id="MAQ-eL-eII"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+</document>
